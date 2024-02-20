@@ -40,6 +40,7 @@ const products = [{
 
 ]
 
+
 // create additional card in html
 const container = document.querySelector('#container')
 const previousButton = document.querySelector('button.previous')
@@ -63,43 +64,6 @@ infoDiv.append(paragraph)
 
 container.append(nextButton.parentNode)
 
-/*
-//console.log( { cardInfo4 })
-
-function bla(text) {
-    console.log(text)
-    return 5
-}
-
-console.log(bla("hi"))
-*/
-
-/*
-function createCard(card, cardInfo) {
-    card.style.backgroundImage = `url(${cardInfo.image})`
-    card.style.color = cardInfo.color
-
-    const h1 = card.querySelector('h1')
-    h1.textContent = cardInfo.title
-
-    const p = card.querySelector('p')
-    p.textContent = cardInfo.text
-}
-*/
-
-/*
-function createCard(card, { image, title, text, color} ) {
-
-    card.style.backgroundImage = `url(${image})`
-    card.style.color = color
-
-    const h1 = card.querySelector('h1')
-    h1.textContent = title
-
-    const p = card.querySelector('p')
-    p.textContent = text
-}
-*/
 
 const displayProduct = (card, { image, title, text, color}) => {
 
@@ -113,14 +77,6 @@ const displayProduct = (card, { image, title, text, color}) => {
     p.textContent = text
 }
 
-/*
-const cards = document.querySelectorAll('.card')
-for (let i = 0; i < cards.length; i++) {
-createCard(cards[0], cardInfo1)
-createCard(cards[1], cardInfo2)
-createCard(cards[2], cardInfo3)
-}
-*/
 
 const cards = document.querySelectorAll('.card')
 
@@ -139,9 +95,11 @@ updateCards(0)
 previousButton.addEventListener('click', () => updateCards(-1))
 nextButton.addEventListener('click', () => updateCards(1))
 
-//for (let i = 0; i < cards.length; i++) {
-//    createCard(cards[i], products[i])
-//}
+/*
+for (let i = 0; i < cards.length; i++) {
+   createCard(cards[i], products[i])
+}
+*/
 
 /*
 
@@ -164,7 +122,6 @@ if ([ 'Christmas', 'Halloween', 'St. Patricks Day', 'Valentines Day' ].includes(
 }
 
 */
-
 
 /*
 console.log(names[names.length - 1])
